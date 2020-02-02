@@ -94,13 +94,13 @@ $( document ).ready(function() {
   	controls: [
   		'play','progress','current-time'
   	],
-    // listeners: {
-    //     seek: function (e) {
-    //         e.preventDefault() // required on v2
-    //         // Your code here
-    //         return false    // required on v3
-    //     }
-    // }
+    listeners: {
+        seek: function (e) {
+            e.preventDefault() // required on v2
+            // Your code here
+            return false    // required on v3
+        }
+    }
   });
 
   // Functions
@@ -141,6 +141,18 @@ $( document ).ready(function() {
       }
   })
   .code({
+      start: 3.8,
+      onStart: function( options ) {
+        $('.scene-greg .text00').removeClass('active');
+      }
+  })
+  .code({
+      start: 4,
+      onStart: function( options ) {
+        $('.scene-greg .text00a').addClass('active');
+      }
+  })
+  .code({
       start: 5.5,
       onStart: function( options ) {
         scene('blink');
@@ -171,7 +183,31 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 19,
+      start: 11.5,
+      onStart: function( options ) {
+        scene('greg');
+      }
+  })
+  .code({
+      start: 12,
+      onStart: function( options ) {
+        $('.scene-greg .text00b').addClass('active');
+      }
+  })
+  .code({
+      start: 18,
+      onStart: function( options ) {
+        $('.scene-greg .text00b').removeClass('active');
+      }
+  })
+  .code({
+      start: 18.25,
+      onStart: function( options ) {
+        $('.scene-greg .text00c').addClass('active');
+      }
+  })
+  .code({
+      start: 20.5,
       onStart: function( options ) {
         $('.scene-blink .logo').remove();
         $('.text').removeClass('active');
@@ -191,7 +227,7 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 24,
+      start: 23.7,
       onStart: function( options ) {
         $('.scene-blink .text01').addClass('active');
       }
@@ -225,6 +261,60 @@ $( document ).ready(function() {
       start: 32,
       onStart: function( options ) {
         $('.scene-greg .text02').removeClass('active');
+      }
+  })
+  .code({
+      start: 32.25,
+      onStart: function( options ) {
+        $('.scene-greg .text02a').addClass('active');
+      }
+  })
+  .code({
+      start: 34.25,
+      onStart: function( options ) {
+        $('.scene-greg .text02a').removeClass('active');
+      }
+  })
+  .code({
+      start: 34.5,
+      onStart: function( options ) {
+        $('.scene-greg .text02b').addClass('active');
+      }
+  })
+  .code({
+      start: 36,
+      onStart: function( options ) {
+        $('.scene-greg .text02b').removeClass('active');
+      }
+  })
+  .code({
+      start: 36.25,
+      onStart: function( options ) {
+        $('.scene-greg .text02c').addClass('active');
+      }
+  })
+  .code({
+      start: 38,
+      onStart: function( options ) {
+        $('.scene-greg .text02c').removeClass('active');
+      }
+  })
+  .code({
+      start: 38.25,
+      onStart: function( options ) {
+        $('.scene-greg .text02d').addClass('active');
+      }
+  })
+  .code({
+      start: 43.25,
+      onStart: function( options ) {
+        $('.scene-greg .text02d').removeClass('active');
+      }
+  })
+  .code({
+      start: 43.5,
+      onStart: function( options ) {
+        $('.scene-greg .text02e').addClass('active');
       }
   })
   .code({
@@ -358,9 +448,21 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 66,
+      start: 64.75,
       onStart: function( options ) {
-        $('.scene-mel .text01').removeClass('active');
+        scene('greg');
+      }
+  })
+  .code({
+      start: 65,
+      onStart: function( options ) {
+        $('.scene-greg .text05a').addClass('active');
+      }
+  })
+  .code({
+      start: 68.25,
+      onStart: function( options ) {
+        scene('mel');
       }
   })
   .code({
@@ -412,13 +514,7 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 78.34,
-      onStart: function( options ) {
-        $('.scene-type .text04').removeClass('active');
-      }
-  })
-  .code({
-      start: 79,
+      start: 80.5,
       onStart: function( options ) {
         scene('blink');
       }
@@ -776,7 +872,25 @@ $( document ).ready(function() {
       start: 141.88,
       onStart: function( options ) {
         $('.scene-girl1 .girl').addClass('anim');
-        $('.scene-girl1 .text').addClass('active');
+        $('.scene-girl1 .text-a').addClass('active');
+      }
+  })
+  .code({
+      start: 144,
+      onStart: function( options ) {
+        $('.scene-girl1 .text-b').addClass('active');
+      }
+  })
+  .code({
+      start: 146.5,
+      onStart: function( options ) {
+        $('.scene-girl1 .text-c').addClass('active');
+      }
+  })
+  .code({
+      start: 150.5,
+      onStart: function( options ) {
+        $('.scene-girl1 .text-d').addClass('active');
       }
   })
   .code({

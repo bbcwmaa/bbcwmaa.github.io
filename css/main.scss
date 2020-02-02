@@ -187,25 +187,28 @@ body {
 }
 
 .audio-bar {
-  background: #0B9F4D;
+  // background: #0B9F4D;
+  background: #fff;
   bottom: -70px;
   left: 0px;
   height: 70px;
   position: fixed;
   right: 0px;
-  transition: transform 0.5s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   z-index: 999;
   &.active {
     transform: translate3d(0,-60px,0);
   }
   .plyr--audio .plyr__controls {
-    background: #0B9F4D;
+    // background: #0B9F4D;
+    background: #2C2C2C;
     color: #fff;
     height: 60px;
     font-family: "BBCReithSans-Regular";
   }
   .plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true] {
-    background: #0B9F4D;
+    // background: #0B9F4D;
+    background: #2C2C2C;
     color: #fff;
     transform: scale(1.5);
     transition: all 0.1s linear;
@@ -218,6 +221,7 @@ body {
   }
   .plyr__tooltip {
     background: #fff;
+    color: #000;
   }
 }
 
@@ -270,6 +274,13 @@ body {
         }
       }
     }
+  }
+}
+
+.scene-type {
+  .text {
+    bottom: auto !important;
+    margin-top: -40px !important;
   }
 }
 
@@ -543,6 +554,8 @@ body {
     }
   }
 }
+
+
 
 .scene-end {
   .text.active {
