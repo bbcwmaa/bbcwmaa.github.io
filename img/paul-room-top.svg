@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="676px" height="181px" viewBox="0 0 676 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
+        <g id="Player" transform="translate(-424.000000, 0.000000)">
+            <g id="Group" transform="translate(424.154054, -71.000000)">
+                <g id="Clock" transform="translate(0.000000, 112.397059)">
+                    <circle id="Clock-Frame" fill="#F2F2F2" cx="53" cy="53" r="53"></circle>
+                    <circle id="Time" fill-opacity="0.1" fill="#000000" cx="53" cy="11" r="3"></circle>
+                    <circle id="Time" fill-opacity="0.1" fill="#000000" cx="11" cy="53" r="3"></circle>
+                    <circle id="Time" fill-opacity="0.1" fill="#000000" cx="95" cy="53" r="3"></circle>
+                    <circle id="Time" fill-opacity="0.1" fill="#000000" cx="53" cy="95" r="3"></circle>
+                    <polygon id="Hand" fill="#AFB9C5" points="53 17 55 52 51 52"></polygon>
+                    <polygon id="Hand" fill="#AFB9C5" transform="translate(38.845946, 53.602941) rotate(270.000000) translate(-38.845946, -53.602941) " points="38.8459459 41.6029412 40.8459459 65.6029412 36.8459459 65.6029412"></polygon>
+                    <circle id="Time" fill="#C5CFD6" cx="53" cy="53" r="4"></circle>
+                </g>
+                <g id="Hanging-Lamp" transform="translate(576.046622, -0.000000)">
+                    <g id="Light" transform="translate(0.000000, 194.364646)">
+                        <ellipse id="Hanging-Lamp-Light" fill="#F2F2F2" cx="49.5" cy="34.5" rx="42.5" ry="22.5"></ellipse>
+                        <path d="M99,50 C99,22.3857625 76.8380951,0 49.5,0 C22.1619049,0 -7.10542736e-15,22.3857625 -7.10542736e-15,50" id="Hanging-Lamp" fill="#DDE3E9"></path>
+                    </g>
+                    <rect id="Wire" fill="#DDE3E9" x="47" y="0" width="5" height="201.691176"></rect>
+                </g>
+                <g id="Hanging-Lamp" transform="translate(470.651351, -0.000000)">
+                    <g id="Light" transform="translate(0.000000, 144.566176)">
+                        <ellipse id="Hanging-Lamp-Light" fill="#F2F2F2" cx="37" cy="27.8421053" rx="31.7676768" ry="18.1578947"></ellipse>
+                        <path d="M74,40.3508772 C74,18.0657031 57.4345357,0 37,0 C16.5654643,0 -7.10542736e-15,18.0657031 -7.10542736e-15,40.3508772" id="Hanging-Lamp" fill="#DDE3E9"></path>
+                    </g>
+                    <rect id="Wire" fill="#DDE3E9" x="35" y="0" width="5" height="167.566176"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
