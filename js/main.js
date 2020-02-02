@@ -49,7 +49,7 @@ $( document ).ready(function() {
         $('.scene-opening-hours').text('9');
         $('.scene-opening-minutes').text('00');
         $('.audio-bar').addClass('active');
-      },9000);
+      },8000);
     return false;
   });
 
@@ -141,15 +141,15 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 4.5,
+      start: 5.5,
       onStart: function( options ) {
-        $('.text').removeClass('active');
+        scene('blink');
       }
   })
   .code({
-      start: 6.2,
+      start: 5.75,
       onStart: function( options ) {
-        scene('blink');
+        $('.scene-blink .blink,.scene-blink .blink-mic').addClass('anim');
       }
   })
   .code({
@@ -240,7 +240,7 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 48,
+      start: 48.5,
       onStart: function( options ) {
         $('.scene-type .text01').removeClass('active');
       }
@@ -318,7 +318,7 @@ $( document ).ready(function() {
   .code({
       start: 59.5,
       onStart: function( options ) {
-        $('.scene-alexa .alexa').addClass('anim');
+        $('.scene-alexa .echo').addClass('anim');
       }
   })
   .code({
@@ -340,9 +340,15 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 63,
+      start: 62.75,
       onStart: function( options ) {
         scene('mel');
+      }
+  })
+  .code({
+      start: 63,
+      onStart: function( options ) {
+        $('.scene-mel .phone').addClass('anim');
       }
   })
   .code({
@@ -617,19 +623,19 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 111.47,
+      start: 111.50,
       onStart: function( options ) {
         $('.scene-mel .text09').addClass('active');
       }
   })
   .code({
-      start: 112.22,
+      start: 112.50,
       onStart: function( options ) {
         scene('blink');
       }
   })
   .code({
-      start: 112.42,
+      start: 112.75,
       onStart: function( options ) {
         $('.scene-blink .text07').addClass('active');
       }
@@ -653,13 +659,13 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 116.5,
+      start: 117.25,
       onStart: function( options ) {
         $('.scene-greg .text10').removeClass('active');
       }
   })
   .code({
-      start: 116.75,
+      start: 117.5,
       onStart: function( options ) {
         $('.scene-greg .text11').addClass('active');
       }
@@ -683,7 +689,13 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 126.25,
+      start: 124,
+      onStart: function( options ) {
+        $('.scene-blink').fadeOut(2000)
+      }
+  })
+  .code({
+      start: 126,
       onStart: function( options ) {
         scene('greg');
       }
@@ -701,7 +713,7 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 127.97,
+      start: 127.8,
       onStart: function( options ) {
         $('.scene-type .text07').addClass('active');
       }
@@ -727,13 +739,25 @@ $( document ).ready(function() {
   .code({
       start: 135,
       onStart: function( options ) {
-        $('.scene-alexa .alexa').removeClass('anim');
+        $('.scene-alexa .echo').removeClass('anim');
       }
   })
   .code({
-      start: 137.8,
+      start: 135.75,
       onStart: function( options ) {
         scene('greg');
+      }
+  })
+  .code({
+      start: 136,
+      onStart: function( options ) {
+        $('.scene-greg .text00').addClass('active');
+      }
+  })
+  .code({
+      start: 137.5,
+      onStart: function( options ) {
+        $('.scene-greg .text00').removeClass('active');
       }
   })
   .code({
@@ -768,19 +792,19 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 156,
+      start: 155.5,
       onStart: function( options ) {
         $('.scene-type .text08').removeClass('active');
       }
   })
   .code({
-      start: 156.5,
+      start: 156,
       onStart: function( options ) {
         scene('girl2');
       }
   })
   .code({
-      start: 156.74,
+      start: 156.5,
       onStart: function( options ) {
         $('.scene-girl2 .girl').addClass('anim');
         $('.scene-girl2 .text').addClass('active');
@@ -806,9 +830,15 @@ $( document ).ready(function() {
       }
   })
   .code({
-      start: 167.75,
+      start: 168,
       onStart: function( options ) {
         $('.scene-end .text').addClass('active');
+      }
+  })
+  .code({
+      start: 169,
+      onStart: function( options ) {
+        console.log('end');
       }
   })
 
