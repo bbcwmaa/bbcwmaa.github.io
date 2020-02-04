@@ -947,6 +947,7 @@ $( document ).ready(function() {
       start: 168,
       onStart: function( options ) {
         $('.scene-end .text').addClass('active');
+        $('.audio-bar').removeClass('active');
       }
   })
   .code({
