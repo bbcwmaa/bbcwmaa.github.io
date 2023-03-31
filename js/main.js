@@ -1,4 +1,4 @@
-$( window ).on( "load", function() {
+document.addEventListener('DOMContentLoaded', function() {
 
   var dev = false;
 
